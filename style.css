@@ -1,0 +1,36 @@
+@import "./node_modules/normalize.css/normalize.css";
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+body > div {
+  border: 1px solid black;
+}
+.aboutMe {
+  display: flex;
+}
+
+.name {
+  position: relative;
+  border: 1px solid black;
+  flex: 1;
+  margin-left: 72px;
+  padding: 72px;
+}
+.name > h1 {
+  position: absolute;
+  right: 12px;
+  bottom: 0px;
+}
+.description {
+  border: 1px solid black;
+  flex: 2;
+  margin-right: 72px;
+  padding: 72px;
+  padding-left: 24px;
+}
