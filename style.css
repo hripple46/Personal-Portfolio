@@ -15,8 +15,8 @@ body {
   position: relative;
   display: flex;
 
-  background-image: linear-gradient(to bottom right, orange);
   margin-top: 12px;
+  min-height: 500px;
 }
 
 .name {
@@ -43,6 +43,8 @@ body {
   margin-right: 144px;
   padding: 72px;
   padding-left: 24px;
+  margin-bottom: 48px;
+  margin-top: 48px;
 }
 .background {
   position: absolute;
@@ -55,6 +57,7 @@ body {
   transform-origin: top left;
 }
 .projects {
+  z-index: 1;
   margin-top: 144px;
   margin-left: 144px;
   margin-right: 144px;
@@ -75,4 +78,22 @@ body {
 .projects > h2 {
   border-bottom: 1px solid black;
   padding-bottom: 36px;
+}
+.contactMe {
+  margin-top: 144px;
+  background-color: rgba(265, 155, 0, 0.5);
+
+  position: relative;
+  min-height: 300px;
+}
+.contactMe > h2 {
+  padding-bottom: 36px;
+  border-bottom: 1px solid black;
+  z-index: 1;
+  margin-left: 144px;
+  margin-right: 144px;
+}
+.contactMe > h4 {
+  margin-left: 144px;
+  margin-right: 144px;
 }
