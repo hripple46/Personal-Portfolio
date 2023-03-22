@@ -11,9 +11,6 @@ body {
   grid-template-rows: 2fr 1fr 1fr;
 }
 
-.projects {
-  border-bottom: 1px solid black;
-}
 .aboutMe {
   position: relative;
   display: flex;
@@ -56,4 +53,26 @@ body {
   z-index: 0;
   transform: rotate(-15deg) translateX(-200px) translateY(-25px);
   transform-origin: top left;
+}
+.projects {
+  margin-top: 144px;
+  margin-left: 144px;
+  margin-right: 144px;
+}
+.project {
+  height: 250px;
+  border: 1px solid black;
+  max-width: 300px;
+  min-width: 150px;
+  flex: 1 1 100%;
+  margin: 48px;
+}
+.projectContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.projects > h2 {
+  border-bottom: 1px solid black;
+  padding-bottom: 36px;
 }
