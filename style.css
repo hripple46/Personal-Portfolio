@@ -84,7 +84,8 @@ body {
   background-color: rgba(265, 155, 0, 0.5);
 
   position: relative;
-  min-height: 300px;
+  min-height: 500px;
+  display: flex;
 }
 .contactMe > h2 {
   padding-bottom: 36px;
@@ -96,4 +97,22 @@ body {
 .contactMe > h4 {
   margin-left: 144px;
   margin-right: 144px;
+}
+.contactMeDetails {
+  margin-left: 144px;
+  flex: 3;
+  align-self: center;
+}
+.aboutMeName {
+  margin-right: 144px;
+  background-image: url("./imgs/profile.jpeg");
+  background-size: cover;
+  flex: 1;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  padding-left: 24px;
 }
