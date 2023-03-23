@@ -27,6 +27,7 @@ body {
   margin-left: 144px;
   background-image: url("./imgs/profile.jpeg");
   background-size: cover;
+  min-width: 250px;
 }
 .name > h1 {
   position: absolute;
@@ -115,4 +116,26 @@ body {
   align-items: flex-end;
   color: white;
   padding-left: 24px;
+}
+@media (max-width: 1100px) {
+  .name > h1 {
+    top: -12px;
+    right: -144px;
+  }
+  .name {
+    background-position: 50%;
+    min-height: 300px;
+    max-width: 250px;
+    float: left;
+    margin-right: 24px;
+    z-index: 2;
+  }
+  .aboutMe {
+    display: block;
+  }
+  .aboutMe > .description {
+    margin-right: 72px;
+    margin-left: 72px;
+    position: relative;
+  }
 }
