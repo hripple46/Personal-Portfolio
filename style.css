@@ -11,6 +11,36 @@ body {
   display: grid;
   grid-template-rows: 2fr 1fr 1fr;
 }
+.github {
+  height: 36px;
+  width: auto;
+  position: absolute;
+  bottom: -40px;
+  right: 0px;
+}
+.project {
+  position: relative;
+}
+.projectDetails {
+  position: absolute;
+  bottom: 12px;
+  left: 6px;
+}
+.githubBottom {
+  height: 36px;
+  width: auto;
+}
+.linkedinBottom {
+  height: 36px;
+  width: auto;
+}
+.linkedin {
+  height: 36px;
+  width: auto;
+  position: absolute;
+  bottom: -40px;
+  right: 40px;
+}
 
 .aboutMe {
   overflow-x: clip;
@@ -126,7 +156,7 @@ body {
 @media (max-width: 1100px) {
   .name > h1 {
     top: -12px;
-    right: -144px;
+    right: -206px;
   }
   .name {
     background-position: 50%;
@@ -139,6 +169,14 @@ body {
   }
   .aboutMe {
     display: block;
+  }
+  .name > .github {
+    top: 60px;
+    left: -40px;
+  }
+  .name > .linkedin {
+    top: 106px;
+    left: -40px;
   }
   .aboutMe > .description {
     margin-right: 72px;
@@ -179,7 +217,7 @@ body {
   }
   .name > h1 {
     bottom: 0px;
-    right: 0px;
+    right: 12px;
     top: auto;
   }
   body > .contactMe {
