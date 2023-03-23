@@ -160,3 +160,41 @@ body {
     flex: 1;
   }
 }
+@media (max-width: 570px) {
+  body > .aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 800px;
+  }
+  .aboutMe > .background {
+    height: 128%;
+    width: 200%;
+    transform: rotate(-15deg) translateX(-100px) translateY(-25px);
+  }
+  .aboutMe > .name {
+    margin: 0px;
+  }
+  .name > h1 {
+    bottom: 0px;
+    right: 0px;
+    top: auto;
+  }
+  body > .contactMe {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactMe > .contactMeDetails,
+  .contactMe > .aboutMeName {
+    margin: 0px;
+  }
+  .contactMe > .contactMeDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactMeDetails > h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
