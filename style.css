@@ -20,11 +20,26 @@ body {
 }
 .project {
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.projectImage {
+  position: relative;
+  flex: 3;
+}
+.projectImage > img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 .projectDetails {
-  position: absolute;
-  bottom: 12px;
-  left: 6px;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .githubBottom {
   height: 36px;
@@ -200,7 +215,7 @@ body {
     flex: 1;
   }
 }
-@media (max-width: 570px) {
+@media (max-width: 620px) {
   body > .aboutMe {
     display: flex;
     flex-direction: column;
@@ -237,4 +252,27 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+  .aboutMeName {
+    padding: 0px;
+    min-width: 300px;
+    justify-content: center;
+  }
+}
+.githubProject {
+  margin-right: 12px;
+  height: 22px;
+  width: auto;
+}
+.openProject {
+  margin-right: 6px;
+  height: 24px;
+  width: auto;
+}
+.projectIcons {
+  display: flex;
+  justify-content: center;
+}
+.projectDetails > h3 {
+  margin-left: 6px;
 }
