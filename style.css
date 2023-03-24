@@ -261,10 +261,14 @@ body {
 }
 .githubProject {
   margin-right: 12px;
+  padding: 6px;
+  border-radius: 6px;
   height: 22px;
   width: auto;
 }
 .openProject {
+  padding: 6px;
+  border-radius: 6px;
   margin-right: 6px;
   height: 24px;
   width: auto;
@@ -275,4 +279,10 @@ body {
 }
 .projectDetails > h3 {
   margin-left: 6px;
+}
+
+.githubProject:hover,
+.openProject:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
